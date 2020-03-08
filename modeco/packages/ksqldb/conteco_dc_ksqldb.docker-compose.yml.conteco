@@ -4,7 +4,7 @@ services:
 
 # START SERVICE ksqldb-server.base
   ksqldb-server:
-    image: ${CONTECO_REGISTRY}${CONTECO_REALM}/${CONTECO_ECOSYSTEM}.ksqldb-server.base:0.7.0
+    image: ${CONTECO_REGISTRY}${CONTECO_REALM_RUNTIME}/conteco.ksqldb-server.base:0.7.0
     environment: ['KSQL_BOOTSTRAP_SERVERS=${CONTECO_DC_KSQLDB_KSQL_BOOTSTRAP_SERVERS}','KSQL_KSQL_SERVICE_ID=${CONTECO_DC_KSQLDB_KSQL_KSQL_SERVICE_ID}'${CONTECO_DC_KSQLDB_MODE}]
     command: []
     volumes: []
