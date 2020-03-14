@@ -1,6 +1,6 @@
-# `package.ksql` - ModEco
+# `package.ksqldb` - ModEco
 
-The ModEco ksql module package.  
+The ModEco ksqldb module package.  
 See `conteco.docs.overview` for more information on the ModEco ecosystem.
 
 This package a KSQL server instance to be used with Kafka.  
@@ -9,7 +9,7 @@ This package a KSQL server instance to be used with Kafka.
 
 The module consists of the following service stack:
 
- * `ksql_server` - KSQL Server instance to be used with Kafka.
+ * `ksqldb_server` - ksqlDB Server instance to be used with Kafka.
 
 ## Configuration
 
