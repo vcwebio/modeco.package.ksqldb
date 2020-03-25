@@ -3,7 +3,7 @@ version: '3'
 services:
 
 # START SERVICE ksqldb_server.base
-  ksqldb_server:
+  ksql_server:
     image: ${CONTECO_REGISTRY}${CONTECO_REALM_RUNTIME}/conteco.ksqldb_server.base:0.7.0
     environment: ['KSQL_BOOTSTRAP_SERVERS=${CONTECO_DC_KSQLDB_KSQL_BOOTSTRAP_SERVERS}','KSQL_KSQL_SERVICE_ID=${CONTECO_DC_KSQLDB_KSQL_KSQL_SERVICE_ID}'${CONTECO_DC_KSQLDB_MODE}]
     command: []
